@@ -1,3 +1,7 @@
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh/"
+alias lookhosts="less /etc/hosts"
+
 # handy file conversion tools
 alias dos2unix="perl -pi -e 's/\r\n/\n/;'"
 alias unix2dos="perl -pi -e 's/\n/\r\n/;'"
@@ -36,4 +40,10 @@ alias obliterate='rm -Rf'
 
 alias sshconfig='vi ~/.ssh/config'
 
-alias gitroot='cd "`git rev-parse --show-toplevel`"'
+alias ns='sudo netstat -nlpt'
+
+# taken from http://unix.stackexchange.com/questions/39961/zsh-alias-s-with-parameter
+background() { "$@" & }
+
+alias -s pdf='background evince'
+alias -s odt='background soffice'

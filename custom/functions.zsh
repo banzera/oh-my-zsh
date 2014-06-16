@@ -14,3 +14,8 @@ function pp {
     echo $P
   done
 }
+
+
+function get_fm_pass {
+  ssh root@192.168.20.95 'grep connection.password /opt/firemon/JAS/conf/hib*'
+}

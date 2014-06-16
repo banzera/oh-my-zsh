@@ -51,6 +51,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh/"
 plugins=(
          battery
          bower
+         brew
          coffee
          colorize
          command-not-found
@@ -77,7 +78,7 @@ plugins=(
          themes
          vagrant
          virtualenv
-         virtualenvwrapper
+         # virtualenvwrapper
          )
 
 PROJECT_PATHS=()

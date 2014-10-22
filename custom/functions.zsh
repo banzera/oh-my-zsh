@@ -19,3 +19,11 @@ function pp {
 function get_fm_pass {
   ssh root@192.168.20.95 'grep connection.password /opt/firemon/JAS/conf/hib*'
 }
+
+function bak {
+  mv $1{,.bak}
+}
+
+function unbak {
+  mv $1 ${1%.bak}
+}

@@ -27,3 +27,7 @@ function bak {
 function unbak {
   mv $1 ${1%.bak}
 }
+
+function mfcat {
+  unzip -q -c $1 META-INF/MANIFEST.MF
+}

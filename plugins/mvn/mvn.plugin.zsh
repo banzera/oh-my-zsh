@@ -44,7 +44,7 @@ mvn-color()
 alias mvn!='mvn -f $(git rev-parse --show-toplevel || echo ".")/pom.xml'
 
 # Override the mvn command with the colorized one.
-#alias mvn="mvn-color"
+alias mvn="mvn-color"
 
 # aliases
 alias mvncie='mvn clean install eclipse:eclipse'
@@ -191,4 +191,4 @@ function listMavenCompletions {
     ); 
 }
 
-compctl -K listMavenCompletions mvn
+compctl -K listMavenCompletions mvn-color

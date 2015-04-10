@@ -31,3 +31,15 @@ function unbak {
 function mfcat {
   unzip -q -c $1 META-INF/MANIFEST.MF
 }
+
+
+#Get IP
+function ip-addr() {
+    wget -qO- http://ipecho.net/plain
+    echo
+}
+
+# Time ZSH startup
+function zsh-time() {
+    time zsh -i -c exit
+}

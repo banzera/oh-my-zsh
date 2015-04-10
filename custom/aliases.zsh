@@ -49,3 +49,8 @@ alias -s pdf='background evince'
 alias -s odt='background soffice'
 
 alias veewee='bundle exec veewee'
+
+alias sz='unzip -ql'
+
+alias mvn='mvn-color'
+compctl -K listMavenCompletions mvn-color

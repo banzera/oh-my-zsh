@@ -13,11 +13,13 @@ function pp {
   for P in $PATHS_ARRAY; do
     echo $P
   done
+
+  unset PATHS_ARRAY
 }
 
 
 function get_fm_pass {
-  ssh root@192.168.20.95 'grep connection.password /opt/firemon/JAS/conf/hib*'
+  ssh root@192.168.40.91 'grep connection.password /opt/firemon/JAS/conf/hib*'
 }
 
 function bak {

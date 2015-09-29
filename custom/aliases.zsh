@@ -25,15 +25,6 @@ alias df='df -h'
 
 alias hgrep='history|grep'
 
-# better safe than sorry
-#alias cp='cp -i'
-#alias rm='rm -i'
-#alias mv='mv -i'
-#
-alias chrome="google-chrome"
-alias nn='nautilus --no-desktop'
-
-alias sp='nautilus --no-desktop ~/.config/sublime-text-2/Packages'
 alias gosp='cd ~/.config/sublime-text-2/Packages'
 
 alias obliterate='rm -Rf'
@@ -54,3 +45,7 @@ alias sz='unzip -ql'
 
 alias mvn='mvn-color'
 compctl -K listMavenCompletions mvn-color
+
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+alias rtfm='man'

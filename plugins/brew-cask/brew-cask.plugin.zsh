@@ -82,3 +82,6 @@ __call_original_brew()
   _call_function ret _brew
   compdef _brew-cask brew
 }
+
+alias cask='brew cask'
+compdef _brew cask=brew-cask

@@ -49,3 +49,5 @@ compctl -K listMavenCompletions mvn-color
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias rtfm='man'
+
+alias hero='heroku'

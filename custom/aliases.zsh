@@ -51,3 +51,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias rtfm='man'
 
 alias hero='heroku'
+alias hrrc='heroku run rails console'
+
+alias gmnff='git merge --no-ff'
+

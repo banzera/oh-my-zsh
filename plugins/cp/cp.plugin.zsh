@@ -11,5 +11,12 @@
 #  -e /dev/null - only work on local files
 #  -- - everything after this is an argument, even if it looks like an option
 
-alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress"
-alias mvv="rsync -poghav --progress --remove-source-files"
+mvv() {
+    rsync -pogav -hhh --progress --remove-source-files
+}
+compdef _files mvv
+
+cpv() {
+    rsync -pogbr -hhh --backup-dir=/tmp/rsync -e /dev/null --progress "$@"
+}
+compdef _files cpv

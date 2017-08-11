@@ -52,6 +52,7 @@ alias rtfm='man'
 
 alias hero='heroku'
 alias hrrc='heroku run rails console'
+alias hrb='heroku run bash'
 
 alias gmnff='git merge --no-ff'
 

@@ -45,3 +45,8 @@ function ip-addr() {
 function zsh-time() {
     time zsh -i -c exit
 }
+
+function workon {
+  export HEROKU_APP=$HEROKU_PROJECT_NAME-dev-pr-$1
+}
+

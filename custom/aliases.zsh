@@ -1,5 +1,5 @@
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh/"
+alias zshconfig="st ~/.zshrc"
+alias ohmyzsh="st ~/.oh-my-zsh/"
 alias lookhosts="less /etc/hosts"
 
 # handy file conversion tools
@@ -17,7 +17,6 @@ alias l.='ll -d .*'
 alias __='sudo !!'
 
 alias h=history
-alias f=finger
 alias jb='jobs -l'
 
 alias duh='du -h'
@@ -54,5 +53,5 @@ alias hero='heroku'
 alias hrrc='heroku run rails console'
 alias hrb='heroku run bash'
 
+alias grbom='git rebase --onto master'
 alias gmnff='git merge --no-ff'
-
